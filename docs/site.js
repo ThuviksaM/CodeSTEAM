@@ -33,7 +33,7 @@ function solveForAns() {
   } else if (click "btn-/" == True) {
     var outAns = outAns+"/";
   } else if (click "btn-=" == True) {
-    var outAns = float(outAns)
+    var outAns = float(outAns);
     document.getElementById("calc-out").innerHTML = outAns;
   } else if (click "btn-c" == True) {
     var outAns = none;
