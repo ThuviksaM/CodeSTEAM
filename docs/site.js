@@ -34,7 +34,7 @@ function solveForAns() {
     var outAns = outAns+"/";
   } else if (click "btn-=" == True) {
     var outAns = float(outAns);
-    document.getElementById("calc-out").innerHTML = outAns;
+    document.getElementById("calc-out").innerHTML = setText(outAns);
   } else if (click "btn-c" == True) {
     var outAns = none;
   }
