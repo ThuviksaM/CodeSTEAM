@@ -1,1 +1,14 @@
+/*--------------------------------------------------------------------------------------*/
 
+.calc-bdy {
+  align: center;
+}
+
+.calc-ans {
+  align: top;
+  font-family: Lucida Sans Typewriter, Lucida Console, monaco, Bitstream Vera Sans Mono, monospace; 
+}
+
+.calc-nums {
+  padding: 30px;
+}
