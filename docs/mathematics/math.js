@@ -46,5 +46,13 @@ function solveForAns() {
 
 /* Die */
 function rollDie() {
-  var dieSide = 
+  var highest = 120;
+  var dieSides = document.getElementById("sidesInput").value;
+  if (dieSides > highest) {
+    var invalidSides = "Invalid # of sides, over 120";
+    document.getElementById("dieOut").innerHTML = setText(invalidSides);
+  } else {
+    var random = Math.float(Math.random * dieSides) + 1;
+    document.getElementById("dieOut").innerHTML = setText(random);
+  }
 };
