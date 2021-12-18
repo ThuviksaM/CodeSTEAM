@@ -48,13 +48,13 @@ function solveForAns() {
 /* Die */
 function rollTheDie() {
   var highest = 120;
-  var dieSides = document.getElementById("sidesInput").value;
+  var dieSides = document.getElementById("sides-input").value;
   if (dieSides > highest) {
     var invalidSides = "Invalid # of sides, over 120";
-    document.getElementById("dieOut").innerHTML = setText(invalidSides);
+    document.getElementById("die-out").innerHTML = setText(invalidSides);
   } else {
     var random = Math.float(Math.random * dieSides) + 1;
-    document.getElementById("dieOut").innerHTML = setText(random);
+    document.getElementById("die-out").innerHTML = setText(random);
   }
 };
 
