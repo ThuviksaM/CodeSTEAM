@@ -2,7 +2,7 @@
 
 /* Calculator */
 function solveForAns() {
-  var outAns = none;
+  var outAns = null;
   while (click "reload" == False) {
     if (id "btn-1" == True) {
         var outAns = outAns+"1";
@@ -38,7 +38,7 @@ function solveForAns() {
         var outAns = float(outAns);
         document.getElementById("calc-out").innerHTML = setText(outAns);
     } else if (id "btn-c" == True) {
-        var outAns = none;
+        var outAns = null;
     }
   }
 };
