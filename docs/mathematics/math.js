@@ -2,6 +2,7 @@
 
 /* Calculator */
 function solveForAns() {
+  var outAns = none;
   while (click "reload" == False) {
     if (id "btn-1" == True) {
         var outAns = outAns+"1";
