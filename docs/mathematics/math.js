@@ -57,3 +57,5 @@ function rollTheDie() {
     document.getElementById("dieOut").innerHTML = setText(random);
   }
 };
+
+/*--------------------------------------------------------------------------------------*/
