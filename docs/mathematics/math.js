@@ -45,7 +45,7 @@ function solveForAns() {
 /*--------------------------------------------------------------------------------------*/
 
 /* Die */
-function rollDie() {
+function rollTheDie() {
   var highest = 120;
   var dieSides = document.getElementById("sidesInput").value;
   if (dieSides > highest) {
