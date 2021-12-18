@@ -45,4 +45,6 @@ function solveForAns() {
 /*--------------------------------------------------------------------------------------*/
 
 /* Die */
-var dieSides = 
+function rollDie() {
+  var dieSide = 
+};
