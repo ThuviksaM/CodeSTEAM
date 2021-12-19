@@ -1,5 +1,13 @@
 /*--------------------------------------------------------------------------------------*/
 
+/* setText */
+function setText(id, text) {
+  document.getElementById(id).innerHTML = text
+};
+
+
+/*--------------------------------------------------------------------------------------*/
+
 /* Calculator */
 function solveForAns() {
   var outAns = null;
@@ -36,7 +44,7 @@ function solveForAns() {
         var outAns = outAns+"/";
     } else if (id "btn-=" == True) {
         var outAns = float(outAns);
-        document.getElementById("calc-out").innerHTML = setText(outAns);
+        setText("calc-out", outAns);
     } else if (id "btn-c" == True) {
         var outAns = null;
     }
@@ -51,10 +59,10 @@ function rollTheDie() {
   var dieSides = document.getElementById("sides-input").value;
   if (dieSides > highest) {
     var invalidSides = "Invalid # of sides, over 120";
-    document.getElementById("die-out").innerHTML = setText(invalidSides);
+    setText("die-out", invalidSides);
   } else {
     var random = Math.float(Math.random * dieSides) + 1;
-    document.getElementById("die-out").innerHTML = setText(random);
+    setText("die-out", random);
   }
 };
 
