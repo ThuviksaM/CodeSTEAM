@@ -2,11 +2,11 @@
 
 /* Helpful, but simple functions */
 function setText(id, text) {
-  document.getElementById(id).innerHTML = text /* Basically uses the actual command to set the text of something, and makes it simpler */
+  document.getElementById(id).innerHTML = text /* Basically use the actual command to set the text of something, and make it simpler */
 };
 
 function getValue(id) {
-  document.getElementById(id).value;
+  document.getElementById(id).value; /* Basically use the actual function to get the value of somthing and make it simpler */
 };
 
 
@@ -60,7 +60,7 @@ function solveForAns() {
 /* Function for the die */
 function rollTheDie() {
   var highest = 120;
-  var dieSides = getValue("sides");
+  var dieSides = getValue("sides-input");
   if (dieSides > highest) {
     var invalidSides = "Invalid # of sides, over 120";
     setText("die-out", invalidSides);
