@@ -2,11 +2,11 @@
 
 /* Helpful, but simple functions */
 function setText(id, text) {
-  document.getElementById(id).innerHTML = text /* Basically use the actual command to set the text of something, and make it simpler */
+  document.getElementById(id).innerHTML = text /* Basically use actual command to set txt of something, and make it simpler */
 };
 
 function getValue(id) {
-  document.getElementById(id).value; /* Basically use the actual function to get the value of somthing and make it simpler */
+  document.getElementById(id).value; /* Basically use actual function to get value of something, and make it simpler */
 };
 
 
@@ -15,7 +15,7 @@ function getValue(id) {
 /* Function for the calculator */
 function solveForAns() {
   var outAns = null;
-  while (click "reload" == False) { /* While the reload button isn't clicked, check which num or symbol button is clicked and add that symbol or num as a string to the outAns variable*/ 
+  while (click "reload" == False) { /* While reload btn isn't clicked, check which num or sym btn is clicked and add that sym or num as a str to the outAns var */ 
     if (id "btn-1" == True) {
         var outAns = outAns+"1";
     } else if (id "btn-2" == True) {
@@ -46,10 +46,10 @@ function solveForAns() {
         var outAns = outAns+"x";
     } else if (id "btn-/" == True) {
         var outAns = outAns+"/";
-    } else if (id "btn-=" == True) { /*When the = button is clicked convert the outAns variable into a float and set the text of calc-out to outAns */
+    } else if (id "btn-=" == True) { /* If = button is clicked convert outAns var into a float and set txt of calc-out to outAns */
         var outAns = float(outAns);
         setText("calc-out", outAns);
-    } else if (id "btn-c" == True) { /* When the Clear button is clicked set the outAns variable to null (nothing) */
+    } else if (id "btn-c" == True) { /* If Clear button is clicked set outAns var to null (nothing) */
         var outAns = null;
     }
   }
@@ -59,13 +59,13 @@ function solveForAns() {
 
 /* Function for the die */
 function rollTheDie() {
-  var highest = 120;
-  var dieSides = getValue("sides-input");
-  if (dieSides > highest) {
-    var invalidSides = "Invalid # of sides, over 120";
+  var highest = 120; /* Store highest num of sides for die (120) in highest var */
+  var dieSides = getValue("sides-input"); /* Store num of sides inputed by user in dieSides var */
+  var invalidSides = "Invalid # of sides, over 120"; /* Store wht to say if dieSide > highest in invalidSides var */
+  var random = Math.float(Math.random * dieSides) + 1; /* Store wht num to roll the die to (a randm num) in random var */
+  if (dieSides > highest) { /* If dieSides is > highest, set txt of die-out to invalidSides */
     setText("die-out", invalidSides);
-  } else {
-    var random = Math.float(Math.random * dieSides) + 1;
+  } else { /* Else set txt of die-out to random */
     setText("die-out", random);
   }
 };
