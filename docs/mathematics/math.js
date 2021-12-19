@@ -58,10 +58,10 @@ function solveForAns() {
 /*--------------------------------------------------------------------------------------*/
 
 /* Function for the die */
+var highest = 120; /* Store highest num of sides for die (120) in highest var */
+var invalidSides = "Invalid # of sides, over 120"; /* Store wht to say if dieSide > highest in invalidSides var */
 function rollTheDie() {
-  var highest = 120; /* Store highest num of sides for die (120) in highest var */
   var dieSides = getValue("sides-input"); /* Store num of sides inputed by user in dieSides var */
-  var invalidSides = "Invalid # of sides, over 120"; /* Store wht to say if dieSide > highest in invalidSides var */
   var random = Math.float(Math.random * dieSides) + 1; /* Store wht num to roll the die to (a randm num) in random var */
   if (dieSides > highest) { /* If dieSides is > highest, set txt of die-out to invalidSides */
     setText("die-out", invalidSides);
