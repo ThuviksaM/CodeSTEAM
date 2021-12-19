@@ -1,17 +1,21 @@
 /*--------------------------------------------------------------------------------------*/
 
-/* setText */
+/* Helpful, but simple functions */
 function setText(id, text) {
-  document.getElementById(id).innerHTML = text
+  document.getElementById(id).innerHTML = text /* Basically uses the actual command to set the text of something, and makes it simpler */
+};
+
+function getValue(id) {
+  document.getElementById(id).value;
 };
 
 
 /*--------------------------------------------------------------------------------------*/
 
-/* Calculator */
+/* Function for the calculator */
 function solveForAns() {
   var outAns = null;
-  while (click "reload" == False) {
+  while (click "reload" == False) { /* While the reload button isn't clicked, check which num or symbol button is clicked and add that symbol or num as a string to the outAns variable*/ 
     if (id "btn-1" == True) {
         var outAns = outAns+"1";
     } else if (id "btn-2" == True) {
@@ -42,10 +46,10 @@ function solveForAns() {
         var outAns = outAns+"x";
     } else if (id "btn-/" == True) {
         var outAns = outAns+"/";
-    } else if (id "btn-=" == True) {
+    } else if (id "btn-=" == True) { /*When the = button is clicked convert the outAns variable into a float and set the text of calc-out to outAns */
         var outAns = float(outAns);
         setText("calc-out", outAns);
-    } else if (id "btn-c" == True) {
+    } else if (id "btn-c" == True) { /* When the Clear button is clicked set the outAns variable to null (nothing) */
         var outAns = null;
     }
   }
@@ -53,10 +57,10 @@ function solveForAns() {
 
 /*--------------------------------------------------------------------------------------*/
 
-/* Die */
+/* Function for the die */
 function rollTheDie() {
   var highest = 120;
-  var dieSides = document.getElementById("sides-input").value;
+  var dieSides = getValue("sides");
   if (dieSides > highest) {
     var invalidSides = "Invalid # of sides, over 120";
     setText("die-out", invalidSides);
