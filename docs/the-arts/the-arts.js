@@ -10,3 +10,30 @@ function getValue(id) {
 };
 
 /*--------------------------------------------------------------------------------------*/
+
+/* RGB Color Wheel */
+var canva = document.getElementById("rbg-canva");
+var cir = canva.getContext("2d");
+cir.beginPath();
+cir.arc(100, 75, 50, 0, 2 * Math.PI);
+cir.stroke();
+
+/*--------------------------------------------------------------------------------------*/
+
+/* CYMK Color Wheel */
+var canva = document.getElementById("cymk-canva");
+var cir = canva.getContext("2d");
+cir.beginPath();
+cir.arc(100, 75, 50, 0, 2 * Math.PI);
+cir.stroke();
+
+/*--------------------------------------------------------------------------------------*/
+
+/* RYB Color Wheel */
+var canva = document.getElementById("ryb-canva");
+var cir = canva.getContext("2d");
+cir.beginPath();
+cir.arc(100, 75, 50, 0, 2 * Math.PI);
+cir.stroke();
+
+/*--------------------------------------------------------------------------------------*/
