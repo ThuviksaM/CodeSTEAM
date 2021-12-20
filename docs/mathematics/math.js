@@ -13,7 +13,7 @@ function getValue(id) {
 
 /* Function for the calculator */
 function solveForAns() {
-  var outAns = null;
+  var outAns = null; /* When the function is first called declare the outAns var w/ a value of null (nothing/0) */
   while (click "reload" == False) { /* While reload btn isn't clicked, check which num or sym btn is clicked and add that sym or num as a str to the outAns var */ 
     if (id "btn-1" == True) {
         var outAns = outAns+"1";
@@ -48,7 +48,7 @@ function solveForAns() {
     } else if (id "btn-=" == True) { /* If = button is clicked convert outAns var into a float and set txt of calc-out to outAns */
         var outAns = float(outAns);
         setText("calc-out", outAns);
-    } else if (id "btn-c" == True) { /* If Clear button is clicked set outAns var to null (nothing) */
+    } else if (id "btn-c" == True) { /* If Clear button is clicked set outAns var to null (nothing/0) */
         var outAns = null;
     }
   }
@@ -62,7 +62,7 @@ function rollTheDie() {
   var inputValue = getValue("sides-input"); /* Store num of sides inputed by user in inputValue var */
   var dieSides = int(inputValue); /* Convert inputValue (a str) to a integer */
   var invalidSides = "Invalid # of sides, over 120"; /* Store wht to say if dieSides > highest in invalidSides var */
-  var random = Math.floor(Math.random * dieSides) + 1; /* Store wht num to roll the die to (a randm num) in random var */
+  var random = Math.floor(Math.random * dieSides) + 1; /* Store wht num to roll the die to (a random num) in random var */
   if (dieSides > highest) { /* If dieSides is > highest, set txt of die-out to invalidSides */
     setText("die-out", invalidSides);
   } else { /* Else set txt of die-out to random */
