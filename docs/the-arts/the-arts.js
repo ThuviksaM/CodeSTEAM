@@ -23,14 +23,16 @@ function drawWheel(order, canvas) {
   var rgb = ['#FF0000', '#FF8000', '#FFFF00', '#80FF00', '#00FF00', '#00FF80', '#00FFFF', '#0080FF', '#0000FF', '#8000FF', '#FF00FF', '#FF0080'];
   var cymk = ['#00FFFF', '#0080FF', '#0000FF', '#8000FF', '#FF00FF', '#FF0080', '#FF0000', '#FF8000', '#FFFF00', '#80FF00', '#00FF00', '#00FF80'];
   var ryb = ['#FE2712', '#FC600A', '#FB9902', '#FCCC1A', '#FEFE33', '#B2D732', '#66B032', '#347C98', '#0247FE', '#4424D6', '#8601AF', '#C21460'];
-  var drawn = 0;
+  var drawn;
+  var count;
   ctx.beginPath();
   ctx.moveTo(poly_x[0], poly_y[0]);
-  for(item = 1; item < poly_x.length; item += 1 ){
-    if (drawn > 1) {
-      ctx.fillStyle = order[drawn];
-      ctx.fill();
-    } else {
+  if (drawn > 1) {
+    count = drawn - 1
+    ctx.fillStyle = order[count];
+    ctx.fill();
+  } else {
+    for(item = 1; item < poly_x.length; item += 1 ){
       ctx.lineTo(poly_x[1] , poly_y[1])
       var drawn += 1;
       ctx.fillStyle = order[0];
