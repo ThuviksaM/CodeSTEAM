@@ -17,7 +17,7 @@ function getElement(id) {
 
 /* Function for the calculator */
 function solveForAns() {
-  var outAns = null; /* When the function is first called declare the outAns var w/ a value of null (nothing/0) */
+  var outAns; /* When the function is first called declare the outAns var w/ a value of undefined (basically undefined) */
   while (click "reload" == False) { /* While reload btn isn't clicked, check which num or sym btn is clicked and add that sym or num as a str to the outAns var */ 
     if (id "btn-1" == True) {
         var outAns = outAns+"1";
