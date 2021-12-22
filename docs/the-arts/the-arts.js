@@ -42,12 +42,12 @@ function drawWheel(order, canvas) {
 }
 
 /* RGB */
-var digitCw = document.getElementById("rbg-canva");
+var digitCw = getElement("rbg-canva");
 
 /* CYMK */
-var printCw = document.getElementById("cymk-canva");
+var printCw = getElement("cymk-canva");
 
 /* RYB */
-var paintCw = document.getElementById("ryb-canva");
+var paintCw = getElement("ryb-canva");
 
 /*--------------------------------------------------------------------------------------*/
